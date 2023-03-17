@@ -2,17 +2,17 @@ import * as THREE from 'three';
 import Experience from './Experience';
 
 export default class Renderer {
-  experience = new Experience();
-  sizes = this.experience.sizes;
-  canvas = this.experience.canvas;
-  scene = this.experience.scene;
-  camera = this.experience.camera;
   constructor() {
+    this.experience = new Experience();
+    this.sizes = this.experience.sizes;
+    this.canvas = this.experience.canvas;
+    this.scene = this.experience.scene;
+    this.camera = this.experience.camera;
     this.setInstance();
   }
 
   setInstance() {
-    this.instance = THREE.WebGLRenderer({
+    this.instance = new THREE.WebGLRenderer({
       canvas: this.canvas,
       antialias: true,
     });

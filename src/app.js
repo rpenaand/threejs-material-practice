@@ -1,4 +1,5 @@
 import Experience from './Experience/Experience';
+const experience = new Experience();
 // import * as THREE from 'three';
 // import { OrbitControls } from 'three/examples/jsm/controls/orbitcontrols';
 // import GUI from 'lil-gui';
@@ -77,5 +78,3 @@ import Experience from './Experience/Experience';
 // gui.add(directionalLight.position, 'x', -5, 5, 0.1).name('lightXPos');
 // gui.add(directionalLight.position, 'y', -5, 5, 0.1).name('lightYPos');
 // gui.add(directionalLight.position, 'z', -5, 5, 0.1).name('lightZPos');
-
-const experience = new Experience();
